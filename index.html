@@ -1,0 +1,2397 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & OpenGraph cho bài Mega Story chính luận -->
+  <title>Hôm nay 1-10, Luật Phát triển đô thị có hiệu lực: Bệ phóng để thành phố phát triển | Mega Story</title>
+  <meta name="description" content="LTS: Từ ngày 1-10, Luật Phát triển đô thị có hiệu lực, tạo khung pháp lý mới cho sự phát triển của TPHCM với nhiều cơ chế, chính sách đặc thù, vượt trội." />
+  <meta property="og:title" content="Hôm nay 1-10, Luật Phát triển đô thị có hiệu lực: Bệ phóng để thành phố phát triển" />
+  <meta property="og:description" content="Phỏng vấn đồng chí Nguyễn Mạnh Cường, Phó Chủ tịch UBND TPHCM về Luật Phát triển đô thị." />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Font chữ Báo chí cao cấp: Serif (Playfair Display & Merriweather) cho Tiêu đề & Trích dẫn; Sans-serif (Plus Jakarta Sans) cho Nội dung -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       1. THIẾT KẾ MỸ THUẬT (ART DIRECTION) & BẢNG MÀU CHÍNH LUẬN ĐÔ THỊ
+       ========================================================================== */
+    :root {
+      --color-primary-navy: #0B192C;     /* Xanh đậm chính khách, uy nghi */
+      --color-primary-dark: #060E1A;     /* Đêm đô thị sâu thẳm */
+      --color-secondary-blue: #1E3E62;   /* Xanh biển sâu hỗ trợ */
+      --color-accent-gold: #D4AF37;      /* Vàng đồng danh dự */
+      --color-accent-amber: #B45309;     /* Hổ phách thanh nhã */
+      --color-accent-red: #991B1B;       /* Đỏ cờ báo chí chính luận */
+      --color-bg-page: #FFFFF4;          /* Nền cả bài màu vàng siêu nhạt, vô cùng êm dịu */
+      --color-bg-surface: #FFFFFF;       /* Nền trắng tinh khôi */
+      --color-text-main: #1E293B;        /* Chữ đọc sách dài không mỏi */
+      --color-text-muted: #64748B;       /* Chữ chú thích, thứ cấp */
+      --color-border-subtle: #E2E8F0;    /* Đường kẻ phân cách */
+      
+      --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --font-serif: 'Merriweather', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      
+      --font-body-size: 1.125rem;
+      --font-body-line-height: 1.85;
+      --transition-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background-color: var(--color-bg-page);
+      color: var(--color-text-main);
+      font-family: var(--font-sans);
+      line-height: var(--font-body-line-height);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* ==========================================================================
+       2. THANH TIẾN TRÌNH ĐỌC (READING PROGRESS BAR)
+       ========================================================================== */
+    #progress-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(226, 232, 240, 0.4);
+      z-index: 1000;
+    }
+
+    #progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--color-accent-red), var(--color-accent-gold));
+      transition: width 0.1s ease-out;
+    }
+
+    /* ==========================================================================
+       3. HERO COVER: HÌNH TITLE TRÀN MÀN HÌNH (ĐÃ BỎ SAPO TRÊN HÌNH TITLE)
+       ========================================================================== */
+    .hero-cover {
+      position: relative;
+      min-height: clamp(800px, 110vh, 1250px);
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: #0B192C; /* Xanh đậm chính khách, trong trẻo */
+      text-align: center;
+    }
+
+    .hero-parallax-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 135%;
+      will-change: transform;
+      z-index: 1;
+    }
+
+    .hero-parallax-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 35%;
+      filter: brightness(0.96) contrast(1.05); /* Tăng độ trong hiển thị hình ảnh sắc nét */
+    }
+
+    /* Lớp màng mờ gradient: Phía trên trong suốt hoàn toàn, phía dưới xanh đậm dần */
+    .hero-scrim {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: linear-gradient(
+        180deg, 
+        rgba(11, 25, 44, 0.02) 0%, 
+        rgba(11, 25, 44, 0.12) 30%, 
+        rgba(11, 25, 44, 0.58) 72%, 
+        rgba(11, 25, 44, 0.92) 100%
+      );
+    }
+
+    .hero-content-wrapper {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 8rem 2rem 7.5rem;
+      color: #FFFFFF;
+    }
+
+    /* Tiêu đề chính to, sắc nét, chia đoạn in hoa trang trọng - Font không chân hiện đại */
+    .hero-headline {
+      font-family: var(--font-sans);
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-transform: uppercase;
+      padding-top: 0.25rem;
+    }
+
+    /* Đoạn 1: Frame bo góc đỏ nhấn mạnh - Tăng 1 size */
+    .hero-tag-badge {
+      display: inline-block;
+      background: #B91C1C;
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: clamp(1.1rem, 2.5vw, 1.55rem);
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      padding: 0.5rem 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 0.95rem;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      box-shadow: 0 4px 20px rgba(185, 28, 28, 0.5);
+      text-transform: uppercase;
+      line-height: 1.3;
+      -webkit-text-stroke: 0.4px rgba(255, 255, 255, 0.8);
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Đoạn 2: [LUẬT PHÁT TRIỂN ĐÔ THỊ] - Tăng 1 size */
+    .hero-line-main {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: clamp(2.35rem, 5.2vw, 4.0rem);
+      font-weight: 900;
+      color: #FFFFFF;
+      line-height: 1.18;
+      letter-spacing: 0.01em;
+      padding: 0.08em 0;
+      -webkit-text-stroke: 0.5px #FFFFFF;
+      text-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.9), 0 0 12px rgba(0, 0, 0, 0.4);
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.75));
+      margin-bottom: 0.12rem;
+      text-transform: uppercase;
+    }
+
+    /* Đoạn [CÓ HIỆU LỰC:] - Tăng 1 size */
+    .hero-line-sub {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: clamp(1.6rem, 3.8vw, 2.7rem);
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.96);
+      line-height: 1.18;
+      letter-spacing: 0.04em;
+      padding: 0.08em 0;
+      -webkit-text-stroke: 0.4px rgba(255, 255, 255, 0.9);
+      text-shadow: 0 3px 20px rgba(0, 0, 0, 0.4), 0 1px 6px rgba(0, 0, 0, 0.85);
+      filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.4));
+      margin-bottom: 0.35rem;
+      text-transform: uppercase;
+    }
+
+    /* Đoạn 3: [BỆ PHÓNG ĐỂ THÀNH PHỐ] & [PHÁT TRIỂN] - Vàng ánh kim rực rỡ, bảo toàn 100% màu sắc tất cả các dấu tiếng Việt */
+    .hero-line-gold {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: clamp(2.7rem, 6.2vw, 4.75rem);
+      font-weight: 900;
+      line-height: 1.28;
+      letter-spacing: 0.01em;
+      padding: 0.25em 0 0.12em; /* Đệm trên đủ rộng để giữ nguyên màu vàng cho tất cả dấu mũ/hỏi tiếng Việt như Ể */
+      background: linear-gradient(180deg, #FFF2A8 0%, #FFD700 38%, #F59E0B 75%, #D49B00 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 0px transparent; /* Bỏ stroke trắng để không bị đè mất màu vàng của dấu tiếng Việt */
+      filter: drop-shadow(0 4px 18px rgba(0, 0, 0, 0.9)) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.7));
+      text-transform: uppercase;
+      margin-bottom: 0.08rem;
+    }
+
+    .hero-title-accent {
+      width: 80px;
+      height: 4px;
+      background: var(--color-accent-gold);
+      margin: 2rem auto 0;
+      border-radius: 2px;
+    }
+
+    /* ==========================================================================
+       4. PHẦN ĐẦU BÀI: SAPO MỞ ĐẦU (TỰ NHIÊN, KHÔNG ĐÓNG HỘP CỨNG, THÂN THIỆN)
+       ========================================================================== */
+    .lead-intro-section {
+      max-width: 860px;
+      margin: 3.5rem auto 2.5rem;
+      position: relative;
+      z-index: 10;
+      padding: 0 1.5rem;
+    }
+
+    /* Đoạn Sapo mở đầu: thanh thoát, đệm lề trái ấm áp, đọc êm ái */
+    .sapo-reading-measure {
+      position: relative;
+      padding: 0.5rem 0 0.5rem 1.75rem;
+      border-left: 3px solid var(--color-accent-gold);
+    }
+
+    .editorial-sapo-text {
+      font-family: var(--font-serif);
+      font-size: clamp(1.18rem, 2.2vw, 1.35rem);
+      line-height: 1.85;
+      font-weight: 600;
+      color: #B91C1C; /* Chữ màu đỏ nổi bật cho nội dung LTS */
+      text-align: justify; /* Canh đều lề 2 bên */
+    }
+
+    /* Nhấn mạnh cụm [LTS:] với nền đỏ theo tông chủ đề */
+    .sapo-lts-badge {
+      background-color: var(--color-accent-red);
+      color: #FFFFFF;
+      padding: 0.18rem 0.65rem;
+      border-radius: 4px;
+      font-family: var(--font-sans);
+      font-weight: 800;
+      font-size: 0.88em;
+      letter-spacing: 0.08em;
+      margin-right: 0.55rem;
+      display: inline-block;
+      vertical-align: baseline;
+      box-shadow: 0 2px 8px rgba(153, 27, 27, 0.22);
+    }
+
+    /* Đoạn 2: Trình bày bình thường, không khung */
+    .editorial-sapo-text-normal {
+      font-family: var(--font-serif);
+      font-size: clamp(1.15rem, 2.1vw, 1.3rem);
+      line-height: 1.85;
+      font-weight: 400;
+      color: #1E293B;
+      margin-top: 1.5rem;
+      padding: 0;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
+
+    /* ==========================================================================
+       HỒ SƠ NHÂN VẬT ĐỒ HOẠ BÁO CHÍ (CẤU TRÚC TRUNG TÂM, HÌNH TRÒN, KHÔNG VIỀN ĐEN)
+       ========================================================================== */
+    .leader-dossier-section {
+      max-width: 820px;
+      margin: 0 auto 3.5rem;
+      padding: 0 1.5rem;
+      position: relative;
+    }
+
+    .dossier-frame-card {
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 12px;
+      padding: 2.75rem 2rem 2.25rem;
+      position: relative;
+      box-shadow: 0 14px 36px rgba(11, 25, 44, 0.05);
+      background-image: radial-gradient(#F1F5F9 1.5px, transparent 1.5px);
+      background-size: 20px 20px;
+      background-color: #FAFCFE;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Kicker hoa tiêu trên cùng */
+    .dossier-top-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-accent-red);
+      margin-bottom: 1.65rem;
+    }
+
+    .dossier-top-badge::before,
+    .dossier-top-badge::after {
+      content: '';
+      width: 32px;
+      height: 1px;
+      background: #CBD5E1;
+    }
+
+    /* Khung để hình HÌNH TRÒN TO HƠN 50% (210px x 210px), KHÔNG VIỀN ĐEN, Ở GIỮA */
+    .dossier-avatar-wrapper {
+      position: relative;
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      margin: 0 auto 1.5rem;
+      background: #FFFFFF;
+      padding: 5px;
+      box-shadow: 0 0 0 3px var(--color-accent-gold), 0 16px 36px rgba(11, 25, 44, 0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .dossier-avatar-wrapper:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 0 4px var(--color-accent-amber), 0 20px 42px rgba(11, 25, 44, 0.16);
+    }
+
+    .dossier-avatar-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #E2E8F0;
+    }
+
+    .dossier-avatar-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 15%;
+      border-radius: 50%;
+    }
+
+    /* TÊN Ở PHÍA DƯỚI HÌNH: CHỮ MÀU ĐỎ NỔI BẬT VỚI HIỆU ỨNG */
+    .dossier-subject-name-center {
+      font-family: var(--font-display);
+      font-size: clamp(1.55rem, 3.2vw, 2.1rem);
+      font-weight: 800;
+      color: #B91C1C; /* Màu đỏ chủ đề nổi bật */
+      letter-spacing: -0.015em;
+      line-height: 1.25;
+      margin-bottom: 0.85rem;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      cursor: default;
+    }
+
+    .dossier-subject-name-center:hover {
+      color: #DC2626; /* Đỏ tươi rực rỡ nổi bật khi hover */
+      transform: scale(1.025);
+      text-shadow: 0 4px 16px rgba(220, 38, 38, 0.25);
+    }
+
+    /* CHỨC VỤ Ở PHÍA DƯỚI TÊN */
+    .dossier-centered-roles {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.35rem;
+      max-width: 620px;
+      margin: 0 auto 1.35rem;
+    }
+
+    .dossier-role-party {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: #475569;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .dossier-role-main {
+      font-family: var(--font-sans);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-primary-navy);
+      line-height: 1.5;
+      margin-top: 0.15rem;
+    }
+
+    .dossier-center-divider {
+      width: 60px;
+      height: 2px;
+      background: var(--color-accent-gold);
+      margin: 0 auto 1.25rem;
+      border-radius: 1px;
+    }
+
+    .dossier-center-quote {
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      font-style: italic;
+      color: var(--color-secondary-blue);
+      max-width: 580px;
+      line-height: 1.6;
+      margin: 0 auto;
+    }
+
+    /* ==========================================================================
+       5. THÂN BÀI VIẾT (ARTICLE CONTAINER)
+       ========================================================================== */
+    .article-container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 1rem 1.75rem 6rem;
+    }
+
+    /* Tiêu đề phân đoạn Title 1 & Title 2 (Đã xóa nhãn Phần thứ nhất/hai) */
+    .section-title-wrap {
+      margin: 4.25rem 0 2.75rem;
+      padding-bottom: 0.25rem;
+      position: relative;
+    }
+
+    .editorial-section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.9rem, 4vw, 2.75rem);
+      font-weight: 800;
+      line-height: 1.28;
+      color: #B91C1C; /* Chữ màu đỏ theo tone chủ đề */
+      letter-spacing: -0.015em;
+      position: relative;
+      padding-left: 1.4rem;
+      padding-bottom: 1.2rem; /* Tăng nhẹ padding-bottom tạo khoảng thở sang trọng */
+      border-left: 6px solid #B91C1C; /* Thanh border-left 6px tinh tế, đồng nhất */
+      border-bottom: 2px solid rgba(185, 28, 28, 0.18);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .editorial-section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 90px;
+      height: 4px;
+      background: linear-gradient(90deg, #B91C1C 0%, #D97706 60%, var(--color-accent-gold) 100%);
+      border-radius: 2px;
+      transition: width 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+      box-shadow: 0 0 10px rgba(185, 28, 28, 0.35);
+    }
+
+    .editorial-section-title:hover {
+      color: #DC2626; /* Đỏ tươi rực rỡ nổi bật khi hover */
+      transform: translateX(8px);
+      text-shadow: 0 2px 12px rgba(220, 38, 38, 0.2);
+    }
+
+    .editorial-section-title:hover::after {
+      width: 100%;
+      box-shadow: 0 0 20px rgba(220, 38, 38, 0.7);
+    }
+
+    /* ==========================================================================
+       6. ĐỊNH DẠNG HỎI - ĐÁP CHÍNH LUẬN (NHẸ NHÀNG, DỄ ĐỌC, THÂN THIỆN, KHÔNG SLOP)
+       ========================================================================== */
+    .qa-block {
+      margin-bottom: 2.75rem;
+      border-radius: 8px;
+      transition: background-color 0.2s ease;
+      position: relative;
+    }
+
+    .question-box {
+      background: #FFFFFF;
+      border-radius: 8px;
+      padding: 1.15rem 1.45rem;
+      margin-bottom: 1.25rem;
+      border: 1px solid #FDE68A;
+      border-left: 4px solid var(--color-accent-amber);
+      box-shadow: 0 4px 14px rgba(180, 83, 9, 0.05);
+      transition: border-left-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .qa-block:hover .question-box {
+      border-left-color: #D97706;
+      background-color: #FEF3C7;
+      box-shadow: 0 6px 18px rgba(180, 83, 9, 0.1);
+    }
+
+    .question-speaker-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-family: var(--font-sans);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #64748B;
+      margin-bottom: 0.35rem;
+    }
+
+    .question-icon {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background: #64748B;
+      color: #FFFFFF;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 15px;
+      font-size: 0.62rem;
+      font-weight: 800;
+      transition: background-color 0.2s ease;
+    }
+
+    .qa-block:hover .question-icon {
+      background-color: var(--color-accent-amber);
+    }
+
+    .question-text {
+      font-family: var(--font-sans);
+      font-size: 1.125rem;
+      font-weight: 600;
+      font-style: italic; /* In nghiêng câu hỏi theo yêu cầu */
+      line-height: 1.7;
+      color: #0F172A;
+      text-align: justify; /* Canh đều lề 2 bên */
+    }
+
+    .answer-box {
+      padding-left: 1.35rem;
+      border-left: 2px solid #E2E8F0;
+      margin-left: 0.35rem;
+      transition: border-left-color 0.2s ease;
+    }
+
+    .qa-block:hover .answer-box {
+      border-left-color: var(--color-accent-gold);
+    }
+
+    .answer-speaker-header {
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--color-primary-navy);
+      letter-spacing: 0.02em;
+      margin-bottom: 0.65rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .answer-speaker-header::after {
+      content: '';
+      flex: 1;
+      max-width: 40px;
+      height: 1px;
+      background: #CBD5E1;
+    }
+
+    .answer-prose {
+      font-family: var(--font-serif);
+      font-size: var(--font-body-size);
+      line-height: var(--font-body-line-height);
+      color: #334155;
+      font-weight: 400;
+    }
+
+    .answer-prose p {
+      margin-bottom: 1.35rem;
+      text-align: justify; /* Canh đều lề 2 bên */
+    }
+
+    .answer-prose p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ==========================================================================
+       7. DẤU NGHỈ NHẸ NHÀNG GIỮA CÁC ĐOẠN ĐỐI THOẠI
+       ========================================================================== */
+    .editorial-divider-break {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      margin: 2.75rem auto;
+      width: 70px;
+      height: 1px;
+      background: #E2E8F0;
+      position: relative;
+    }
+
+    .editorial-divider-break::after {
+      content: '';
+      width: 5px;
+      height: 5px;
+      background: var(--color-accent-gold);
+      border-radius: 50%;
+      position: absolute;
+      top: -2px;
+    }
+
+    /* ==========================================================================
+       8. CÁC VỊ TRÍ ẢNH: DÀN 2 HÌNH VÀ DÀN 3 HÌNH TRONG BÀI
+       ========================================================================== */
+    /* ==========================================================================
+       8. CÁC VỊ TRÍ ẢNH: HIỂN THỊ TO TRÀN VIỀN MÀN HÌNH (FULL-VIEWPORT BREAKOUT)
+       ========================================================================== */
+    .editorial-figure-single,
+    .editorial-grid-2,
+    .editorial-grid-3,
+    .editorial-gallery-carousel {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
+      box-shadow: none;
+      padding-left: clamp(1.25rem, 6vw, 5rem);
+      padding-right: clamp(1.25rem, 6vw, 5rem);
+    }
+
+    /* Dàn 1 hình lớn tràn viền */
+    .editorial-figure-single {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      padding-top: 2.25rem;
+      padding-bottom: 2.25rem;
+      padding-left: clamp(1.25rem, 6vw, 5rem);
+      padding-right: clamp(1.25rem, 6vw, 5rem);
+      background: #FAF8F5;
+      border-top: 1px solid var(--color-border-subtle);
+      border-bottom: 1px solid var(--color-border-subtle);
+    }
+
+    .figure-single-img-wrapper {
+      position: relative;
+      width: 100%;
+      height: clamp(600px, 80vh, 920px);
+      border-radius: 8px;
+      background: #0F172A;
+      overflow: hidden;
+    }
+
+    .figure-single-img-wrapper img {
+      width: 100%;
+      height: 120%;
+      top: -10%;
+      position: relative;
+      object-fit: cover;
+      will-change: transform;
+      transform: translate3d(0, var(--parallax-y, 0px), 0);
+      transition: transform 0.1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Dàn 2 hình (Grid 2 cột) tràn viền */
+    .editorial-grid-2 {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      background: #FAF8F5;
+      padding-top: 2.25rem;
+      padding-bottom: 2.25rem;
+      border-top: 1px solid var(--color-border-subtle);
+      border-bottom: 1px solid var(--color-border-subtle);
+    }
+
+    @media (min-width: 640px) {
+      .editorial-grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .grid-img-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid-img-card .img-box {
+      width: 100%;
+      height: clamp(380px, 52vh, 580px);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #0F172A;
+      position: relative;
+    }
+
+    .grid-img-card .img-box img {
+      width: 100%;
+      height: 122%;
+      top: -11%;
+      position: relative;
+      object-fit: cover;
+      will-change: transform;
+      transform: translate3d(0, var(--parallax-y, 0px), 0);
+      transition: transform 0.1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .grid-img-card:hover .img-box img {
+      transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
+    }
+
+    .grid-img-caption {
+      padding-top: 0.75rem;
+      font-family: var(--font-serif);
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+      line-height: 1.55;
+      font-style: italic;
+    }
+
+    /* Dàn 3 hình (Grid 3 cột) tràn viền */
+    .editorial-grid-3 {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      background: #FAF8F5;
+      padding-top: 2.25rem;
+      padding-bottom: 2.25rem;
+      border-top: 1px solid var(--color-border-subtle);
+      border-bottom: 1px solid var(--color-border-subtle);
+    }
+
+    @media (min-width: 720px) {
+      .editorial-grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .grid-img-card-3 .img-box {
+      width: 100%;
+      height: clamp(320px, 42vh, 460px);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #0F172A;
+      position: relative;
+    }
+
+    .grid-img-card-3 .img-box img {
+      width: 100%;
+      height: 122%;
+      top: -11%;
+      position: relative;
+      object-fit: cover;
+      will-change: transform;
+      transform: translate3d(0, var(--parallax-y, 0px), 0);
+      transition: transform 0.1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .grid-img-card-3:hover .img-box img {
+      transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
+    }
+
+    .editorial-caption-shared {
+      grid-column: 1 / -1;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--color-border-subtle);
+      font-family: var(--font-serif);
+      font-size: 0.86rem;
+      font-style: italic;
+      color: var(--color-text-muted);
+      line-height: 1.55;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .caption-bullet {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-accent-amber);
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       9. KHỐI TRÍCH DẪN BÁO CHÍ (NHẸ NHÀNG, TRANG NHÃ, DỄ CHỊU)
+       ========================================================================== */
+    .quote-section-editorial {
+      max-width: 860px;
+      margin: 4.5rem auto;
+      padding: 3rem 2.25rem;
+      background: #FAF8F5; /* Màu giấy sách ấm áp */
+      border-top: 1px solid rgba(212, 175, 55, 0.45);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.45);
+      border-radius: 6px;
+      position: relative;
+      text-align: center;
+    }
+
+    .quote-inner-container {
+      position: relative;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .decorative-drop-quote {
+      font-family: var(--font-display);
+      font-size: 3.5rem;
+      line-height: 0.8;
+      font-weight: 700;
+      color: var(--color-accent-amber);
+      display: block;
+      margin-bottom: 1.25rem;
+      user-select: none;
+    }
+
+    .featured-quote-text {
+      font-family: var(--font-serif);
+      font-size: clamp(1.22rem, 2.4vw, 1.55rem);
+      font-style: italic;
+      font-weight: 400;
+      line-height: 1.75;
+      color: #1E293B;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.5rem;
+      text-wrap: balance;
+    }
+
+    .quote-author-signoff {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent-amber);
+    }
+
+    .quote-author-signoff::before,
+    .quote-author-signoff::after {
+      content: '—';
+      color: #CBD5E1;
+    }
+
+    /* ==========================================================================
+       10. THƯ VIỆN ẢNH TƯ LIỆU CAROUSEL TRƯỢT NGANG (SLIDING GALLERY)
+       ========================================================================== */
+    .editorial-gallery-carousel {
+      margin: 4.5rem 0 2rem;
+      background: #FFFFFF;
+      border: 1px solid var(--color-border-subtle);
+      border-radius: 12px;
+      padding: 2.25rem 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    .carousel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .carousel-title-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .carousel-kicker {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-accent-amber);
+    }
+
+    .carousel-headline {
+      font-family: var(--font-display);
+      font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+      font-weight: 800;
+      color: #B91C1C; /* Chữ màu đỏ chủ đề */
+      letter-spacing: -0.01em;
+      transition: color 0.3s ease;
+    }
+
+    .carousel-headline:hover {
+      color: #DC2626; /* Đỏ tươi rực rỡ nổi bật khi hover */
+    }
+
+    .carousel-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .carousel-nav-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #CBD5E1;
+      background: #FFFFFF;
+      color: var(--color-primary-navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+
+    .carousel-nav-btn:hover {
+      background: var(--color-primary-navy);
+      color: #FFFFFF;
+      border-color: var(--color-primary-navy);
+      transform: translateY(-1px);
+    }
+
+    .carousel-nav-btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .carousel-counter {
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #64748B;
+      min-width: 46px;
+      text-align: center;
+      user-select: none;
+    }
+
+    .carousel-track-wrapper {
+      display: flex;
+      gap: 1.25rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      scroll-behavior: smooth;
+      border-radius: 8px;
+    }
+
+    .carousel-track-wrapper::-webkit-scrollbar {
+      display: none;
+    }
+
+    .carousel-slide {
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+    }
+
+    .carousel-slide-media {
+      width: 100%;
+      height: 380px;
+      overflow: hidden;
+      position: relative;
+      background: #0F172A;
+    }
+
+    @media (max-width: 640px) {
+      .carousel-slide-media {
+        height: 240px;
+      }
+      .editorial-gallery-carousel {
+        padding: 1.5rem 1rem;
+      }
+    }
+
+    .carousel-slide-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .carousel-slide:hover .carousel-slide-media img {
+      transform: scale(1.03);
+    }
+
+    .carousel-slide-caption {
+      padding: 1.15rem 1.35rem;
+      font-family: var(--font-serif);
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: #334155;
+      background: #FFFFFF;
+      border-top: 1px solid #E2E8F0;
+    }
+
+    .carousel-slide-caption strong {
+      color: var(--color-primary-navy);
+      font-family: var(--font-sans);
+      font-weight: 700;
+      margin-right: 0.35rem;
+    }
+
+    .carousel-dots-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.35rem;
+    }
+
+    .carousel-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      background: #CBD5E1;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: all 0.25s ease;
+    }
+
+    .carousel-dot:hover {
+      background: #94A3B8;
+    }
+
+    .carousel-dot.active {
+      width: 28px;
+      background: var(--color-accent-amber);
+    }
+
+    /* ==========================================================================
+       10. INFOGRAPHIC TIMELINE: DẤU MỐC XÂY DỰNG VÀ THI HÀNH LUẬT PHÁT TRIỂN ĐÔ THỊ
+       ========================================================================== */
+    .infographic-timeline-section {
+      margin: 4.5rem 0 3.5rem;
+      background: #FFFFFF;
+      border: 1px solid var(--color-border-subtle);
+      border-radius: 12px;
+      padding: 3rem 2rem;
+      box-shadow: 0 12px 32px rgba(11, 25, 44, 0.05);
+      position: relative;
+    }
+
+    .timeline-header-group {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .timeline-kicker {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--color-accent-red);
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3.2vw, 2.1rem);
+      font-weight: 800;
+      color: var(--color-primary-navy);
+      letter-spacing: -0.015em;
+      line-height: 1.3;
+    }
+
+    .timeline-track-vertical {
+      position: relative;
+      max-width: 780px;
+      margin: 0 auto;
+      padding-left: 2.5rem;
+    }
+
+    .timeline-track-vertical::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      bottom: 10px;
+      left: 12px;
+      width: 3px;
+      background: linear-gradient(180deg, var(--color-accent-gold) 0%, var(--color-secondary-blue) 70%, var(--color-accent-red) 100%);
+      border-radius: 2px;
+    }
+
+    .timeline-item-node {
+      position: relative;
+      margin-bottom: 1.75rem;
+      transition: transform 0.25s ease;
+    }
+
+    .timeline-item-node:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-node-dot {
+      position: absolute;
+      left: -2.5rem;
+      top: 4px;
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      border: 4px solid var(--color-accent-amber);
+      box-shadow: 0 0 0 3px rgba(180, 83, 9, 0.15);
+      z-index: 2;
+      transition: all 0.25s ease;
+    }
+
+    .timeline-item-node.highlight-node .timeline-node-dot {
+      border-color: var(--color-accent-red);
+      background: var(--color-accent-gold);
+      transform: scale(1.2);
+      box-shadow: 0 0 0 4px rgba(153, 27, 27, 0.2);
+    }
+
+    .timeline-card-content {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 8px;
+      padding: 1.15rem 1.4rem;
+      transition: all 0.25s ease;
+    }
+
+    .timeline-item-node:hover .timeline-card-content {
+      background: #FFFFFF;
+      border-color: var(--color-accent-gold);
+      box-shadow: 0 6px 20px rgba(11, 25, 44, 0.06);
+      transform: translateX(4px);
+    }
+
+    .timeline-item-node.highlight-node .timeline-card-content {
+      background: #FFFBEB;
+      border-color: var(--color-accent-gold);
+    }
+
+    .timeline-date-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--color-primary-navy);
+      background: #E2E8F0;
+      padding: 0.2rem 0.7rem;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.04em;
+    }
+
+    .timeline-item-node.highlight-node .timeline-date-badge {
+      background: var(--color-accent-red);
+      color: #FFFFFF;
+    }
+
+    .timeline-text-body {
+      font-family: var(--font-sans);
+      font-size: 0.98rem;
+      line-height: 1.65;
+      color: #1E293B;
+      font-weight: 500;
+      text-align: justify; /* Canh đều lề 2 bên */
+    }
+
+    .timeline-summary-banner {
+      margin-top: 3rem;
+      background: linear-gradient(135deg, #B91C1C 0%, #881337 100%);
+      color: #FFFFFF;
+      border-radius: 8px;
+      padding: 1.75rem 2rem;
+      border-left: 5px solid var(--color-accent-gold);
+      box-shadow: 0 10px 28px rgba(185, 28, 28, 0.28);
+    }
+
+    .timeline-summary-banner p {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #FFFFFF;
+      font-weight: 500;
+      text-align: justify; /* Canh đều lề 2 bên */
+    }
+
+    /* ==========================================================================
+       10. HIỆU ỨNG CUỘN (SCROLL-TRIGGERED ANIMATIONS) & NÚT BACK TO TOP
+       ========================================================================== */
+    .fade-up-element {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity 0.8s var(--transition-smooth), transform 0.8s var(--transition-smooth);
+      will-change: opacity, transform;
+    }
+
+    .fade-up-element.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #back-to-top-btn {
+      position: fixed;
+      bottom: 2.2rem;
+      right: 2.2rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--color-primary-navy);
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 900;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(12px);
+      transition: all 0.3s ease;
+    }
+
+    #back-to-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    #back-to-top-btn:hover {
+      background: var(--color-accent-amber);
+      transform: translateY(-3px);
+    }
+
+    #back-to-top-btn svg {
+      width: 20px;
+      height: 20px;
+      stroke-width: 2.5;
+    }
+
+    /* ==========================================================================
+       12. LIGHTBOX POPUP TOÀN MÀN HÌNH (FULLSCREEN IMAGE LIGHTBOX)
+       ========================================================================== */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .lightbox-modal.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .lightbox-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(6, 14, 26, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .lightbox-container {
+      position: relative;
+      z-index: 10000;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .lightbox-close-btn {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10010;
+      transition: all 0.25s ease;
+    }
+
+    .lightbox-close-btn:hover {
+      background: var(--color-accent-red);
+      border-color: var(--color-accent-red);
+      transform: scale(1.08);
+    }
+
+    .lightbox-close-btn svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .lightbox-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10010;
+      transition: all 0.25s ease;
+    }
+
+    .lightbox-nav-btn.prev {
+      left: 1.5rem;
+    }
+
+    .lightbox-nav-btn.next {
+      right: 1.5rem;
+    }
+
+    .lightbox-nav-btn:hover {
+      background: var(--color-accent-amber);
+      border-color: var(--color-accent-amber);
+      transform: translateY(-50%) scale(1.08);
+    }
+
+    .lightbox-nav-btn svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .lightbox-content {
+      max-width: 90vw;
+      max-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .lightbox-img-wrapper {
+      max-width: 100%;
+      max-height: 72vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .lightbox-img-wrapper img {
+      max-width: 100%;
+      max-height: 72vh;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      border-radius: 6px;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .lightbox-footer {
+      margin-top: 1.25rem;
+      text-align: center;
+      max-width: 780px;
+    }
+
+    .lightbox-counter {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-accent-gold);
+      margin-bottom: 0.4rem;
+    }
+
+    .lightbox-caption {
+      font-family: var(--font-serif);
+      font-size: 0.98rem;
+      line-height: 1.6;
+      color: #E2E8F0;
+      font-style: italic;
+    }
+
+    /* Hiệu ứng con trỏ thu phóng trên các ảnh bài viết */
+    article img,
+    .hero-parallax-bg img,
+    .dossier-avatar-inner img {
+      cursor: zoom-in;
+    }
+
+    @media (max-width: 640px) {
+      .lightbox-nav-btn {
+        width: 42px;
+        height: 42px;
+      }
+      .lightbox-nav-btn.prev {
+        left: 0.5rem;
+      }
+      .lightbox-nav-btn.next {
+        right: 0.5rem;
+      }
+      .lightbox-close-btn {
+        top: 0.75rem;
+        right: 0.75rem;
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    /* ==========================================================================
+       11. RESPONSIVE
+       ========================================================================== */
+    @media (max-width: 768px) {
+      .hero-cover {
+        min-height: max(560px, 85vh);
+        height: auto;
+      }
+
+      .hero-content-wrapper {
+        padding: 4.5rem 1rem 3.25rem;
+      }
+
+      .hero-tag-badge {
+        font-size: clamp(0.85rem, 3.5vw, 1.15rem);
+        padding: 0.38rem 1rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .hero-line-main {
+        font-size: clamp(1.45rem, 6.2vw, 2.25rem);
+        line-height: 1.22;
+        margin-bottom: 0.2rem;
+      }
+
+      .hero-line-sub {
+        font-size: clamp(1.1rem, 4.5vw, 1.6rem);
+        line-height: 1.22;
+        margin-bottom: 0.35rem;
+      }
+
+      .hero-line-gold {
+        font-size: clamp(1.68rem, 7vw, 2.65rem);
+        line-height: 1.28;
+        padding: 0.22em 0 0.12em;
+        margin-bottom: 0.15rem;
+      }
+
+      .hero-title-accent {
+        margin: 1.25rem auto 0;
+      }
+
+      .lead-intro-section {
+        margin-top: 2.25rem; /* Sửa dứt điểm lỗi chồng hình trên mobile: dùng margin dương tách biệt hoàn toàn với Hero */
+        padding: 0 1rem;
+      }
+
+      .lead-card-container {
+        padding: 1.5rem;
+      }
+
+      .article-container {
+        padding: 1rem 1.25rem 4rem;
+      }
+
+      .question-box {
+        padding: 1.15rem 1.25rem;
+      }
+
+      .answer-box {
+        padding-left: 1.25rem;
+        margin-left: 0;
+      }
+
+      .figure-single-img-wrapper {
+        height: 250px;
+      }
+
+      .quote-section-fullwidth {
+        padding: 3.5rem 1.25rem;
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       THANH TIẾN TRÌNH ĐỌC (READING PROGRESS BAR)
+       ========================================================================== -->
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 1: HERO COVER
+       ========================================================================== -->
+  <header class="hero-cover" id="hero">
+    <!-- Hình ảnh nền Parallax đô thị TP.HCM -->
+    <div class="hero-parallax-bg" id="hero-parallax">
+      <img 
+        src="/tphcm.png" 
+        
+        referrerpolicy="no-referrer"
+      />
+    </div>
+
+    <!-- Màn che chuyển sắc tăng tương phản chữ trên nền ảnh -->
+    <div class="hero-scrim"></div>
+
+    <!-- Title chính to, sắc nét trên hình ảnh -->
+    <div class="hero-content-wrapper">
+      <h1 class="hero-headline">
+        <span class="hero-tag-badge">HÔM NAY 1-10</span>
+        <span class="hero-line-main">LUẬT PHÁT TRIỂN ĐÔ THỊ</span>
+        <span class="hero-line-sub">CÓ HIỆU LỰC:</span>
+        <span class="hero-line-gold">BỆ PHÓNG ĐỂ THÀNH PHỐ</span>
+        <span class="hero-line-gold">PHÁT TRIỂN</span>
+      </h1>
+      <div class="hero-title-accent"></div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       PHẦN 1: SAPO MỞ ĐẦU (TỰ NHIÊN, THANH THOÁT, NGUYÊN BẢN 100%)
+       ========================================================================== -->
+  <section class="lead-intro-section fade-up-element" aria-label="Lời mở đầu phỏng vấn">
+    <!-- Đoạn 1: Lời tòa soạn (LTS) -->
+    <div class="sapo-reading-measure">
+      <p class="editorial-sapo-text">
+        <span class="sapo-lts-badge">LTS:</span>Từ ngày 1-10, Luật Phát triển đô thị có hiệu lực, tạo khung pháp lý mới cho sự phát triển của TPHCM với nhiều cơ chế, chính sách đặc thù, vượt trội. Cùng với cơ hội là yêu cầu cao hơn về năng lực tổ chức thực hiện, sự chủ động của các sở, ngành, địa phương và trách nhiệm của người đứng đầu. Hiệu quả thực thi luật sẽ được đo bằng khả năng chuyển các cơ chế, chính sách thành kết quả phát triển cụ thể.
+      </p>
+    </div>
+
+    <!-- Đoạn 2: Trình bày bình thường không khung -->
+    <p class="editorial-sapo-text-normal">
+      Trả lời phỏng vấn Báo Sài Gòn Giải Phóng, đồng chí Nguyễn Mạnh Cường, Ủy viên dự khuyết Trung ương Đảng, Ủy viên Ban Thường vụ Thành ủy, Phó Chủ tịch UBND TPHCM, phân tích những nhiệm vụ trọng tâm trong triển khai Luật Phát triển đô thị, các vấn đề dân sinh cần tập trung giải quyết và yêu cầu gắn thẩm quyền với trách nhiệm, lấy kết quả làm thước đo.
+    </p>
+  </section>
+
+  <!-- ==========================================================================
+       PHẦN 2: HỒ SƠ ĐỒ HOẠ NHÂN VẬT ĐỐI THOẠI
+       ========================================================================== -->
+  <section class="leader-dossier-section fade-up-element" aria-label="Hồ sơ nhân vật phỏng vấn">
+    <div class="dossier-frame-card">
+      
+      <!-- Nhãn hoa tiêu trên cùng -->
+      
+
+      <!-- Khung hình hình tròn, không viền đen, ở giữa -->
+      <div class="dossier-avatar-wrapper">
+        <div class="dossier-avatar-inner">
+          <img 
+            src="/nguyen manh cuong.jpg" 
+            alt="Chân dung đồng chí Nguyễn Mạnh Cường "
+            referrerpolicy="no-referrer"
+            
+          />
+        </div>
+      </div>
+
+      <!-- Tên ở phía dưới hình ảnh -->
+      <h2 class="dossier-subject-name-center">
+        Đồng chí NGUYỄN MẠNH CƯỜNG
+      </h2>
+
+      <!-- Chức vụ ở phía dưới tên -->
+      <div class="dossier-centered-roles">
+        <div class="dossier-role-party">
+           Ủy viên dự khuyết Trung ương Đảng,
+        </div>
+        <div class="dossier-role-party">
+           Ủy viên Ban Thường vụ Thành ủy, 
+        </div>
+        <div class="dossier-role-party">
+           Phó Chủ tịch UBND TPHCM
+        </div>
+        
+      </div>
+
+      <div class="dossier-center-divider"></div>
+
+      
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       NỘI DUNG CHÍNH BÀI PHỎNG VẤN (ARTICLE CONTENT)
+       ========================================================================== -->
+  <main id="article-body">
+    <article class="article-container">
+
+      <!-- ======================================================================
+           PHÂN ĐOẠN 1: TITLE 1 - LẤY KẾT QUẢ PHỤC VỤ NGƯỜI DÂN, DOANH NGHIỆP LÀM TRUNG TÂM
+           ====================================================================== -->
+      <section class="editorial-section">
+        
+        <div class="section-title-wrap fade-up-element">
+          <h2 class="editorial-section-title">Lấy kết quả phục vụ người dân, <br> doanh nghiệp làm trung tâm</h2>
+        </div>
+
+        <!-- CÂU HỎI 1 & CÂU TRẢ LỜI 1 -->
+        <div class="qa-block fade-up-element">
+          <div class="question-box">
+            <div class="question-speaker-badge">
+              <span class="question-icon">?</span>
+              <span>Phóng viên</span>
+            </div>
+            <p class="question-text">
+              Luật Phát triển đô thị có hiệu lực từ ngày 1-10. Đến nay, HĐND TPHCM đã thông qua 25 nghị quyết cụ thể hóa luật. Xin đồng chí cho biết thành phố sẽ tập trung triển khai những nhiệm vụ gì để các cơ chế, chính sách mới sớm phát huy hiệu quả?
+            </p>
+          </div>
+
+          <div class="answer-box">
+            <div class="answer-speaker-header">
+              Đồng chí NGUYỄN MẠNH CƯỜNG
+            </div>
+            <div class="answer-prose">
+              <p>
+                Vừa qua, HĐND TPHCM đã ban hành 25 nghị quyết và UBND TPHCM dự kiến sẽ ban hành 22 quyết định, tạo khung pháp lý hoàn chỉnh để tổ chức thực hiện tốt nhất Luật Phát triển đô thị.
+              </p>
+              <p>
+                Yêu cầu đặt ra là mỗi nghị quyết, quyết định phải xác định rõ cơ quan chủ trì, đơn vị phối hợp, người chịu trách nhiệm, thời hạn, nguồn lực và có thước đo cụ thể, rõ kết quả đầu ra. Các sở, ngành và địa phương phải chủ động thực hiện phần việc thuộc thẩm quyền, không chờ đến khi phát sinh vướng mắc mới xử lý.
+              </p>
+              <p>
+                Trong quá trình thực hiện, cần tập trung tháo gỡ các điểm nghẽn theo thẩm quyền hoặc báo cáo UBND thành phố nếu vượt thẩm quyền. Mục tiêu là tạo ra những bước đột phá về phát triển kinh tế - xã hội của thành phố, đặc biệt là trong các lĩnh vực quản lý hạ tầng, tài nguyên; khoa học công nghệ, đổi mới sáng tạo; phát triển không gian ngầm, TOD; quy hoạch kiến trúc; y tế, giáo dục; lĩnh vực đầu tư,...
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DẤU NGHỈ SAU PHẦN TRẢ LỜI 1 -->
+        <div class="editorial-divider-break fade-up-element" aria-hidden="true"></div>
+
+        <!-- VỊ TRÍ ẢNH: DÀN 2 HÌNH -->
+        <div class="editorial-grid-2 fade-up-element">
+          <div class="grid-img-card">
+            <div class="img-box">
+              <img 
+                src="/Metro số 1 đi qua khu vực phường Phước Long, kết nối hạ tầng giao thông và không gian đô thị phía Đông TPHCM (ẢNH HOÀNG HÙNG).jpg" 
+                alt="Metro số 1 đi qua khu vực phường Phước Long, kết nối hạ tầng giao thông và không gian đô thị phía Đông TPHCM"
+                referrerpolicy="no-referrer"
+                loading="lazy"
+              />
+            </div>
+            <div class="grid-img-caption">
+              Metro số 1 đi qua khu vực phường Phước Long, kết nối hạ tầng giao thông và không gian đô thị phía Đông TPHCM. Ảnh: HOÀNG HÙNG
+            </div>
+          </div>
+
+          <div class="grid-img-card">
+            <div class="img-box">
+              <img 
+                src="/Khu đô thị mới Thủ Thiêm, phường An Khánh, TPHCM. Ảnh HOÀNG HÙNG.jpg" 
+                alt="Khu đô thị mới Thủ Thiêm, phường An Khánh, TPHCM"
+                referrerpolicy="no-referrer"
+                loading="lazy"
+              />
+            </div>
+            <div class="grid-img-caption">
+              Khu đô thị mới Thủ Thiêm, phường An Khánh, TPHCM. Ảnh: HOÀNG HÙNG
+            </div>
+          </div>
+
+          
+        </div>
+
+        <!-- CÂU HỎI 2 & CÂU TRẢ LỜI 2 -->
+        <div class="qa-block fade-up-element">
+          <div class="question-box">
+            <div class="question-speaker-badge">
+              <span class="question-icon">?</span>
+              
+            </div>
+            <p class="question-text">
+              Điểm nghẽn nào đang tác động trực tiếp đến đời sống người dân mà thành phố muốn ưu tiên tháo gỡ trước?
+            </p>
+          </div>
+
+          <div class="answer-box">
+            
+            <div class="answer-prose">
+              <p>
+                Thành phố ưu tiên tháo gỡ công tác bồi thường, hỗ trợ, tái định cư và giải phóng mặt bằng, nhất là đối với các dự án hạ tầng cấp bách. Quá trình thực hiện phải công khai, đúng đối tượng, bảo đảm quyền và lợi ích hợp pháp, chính đáng của người dân, đồng thời quan tâm nơi ở mới và sinh kế của người dân khi bị thu hồi đất.
+              </p>
+              <p>
+                Cùng với việc tháo gỡ điểm nghẽn về mặt bằng, các chính sách về lĩnh vực khoa học công nghệ, đổi mới sáng tạo cũng đã được HĐND thành phố thông qua nhằm xây dựng cơ chế, chính sách phát triển mạnh mẽ các hoạt động khoa học công nghệ, đổi mới sáng tạo, sớm hình thành trung tâm đổi mới sáng tạo với hệ sinh thái hoàn thiện để thúc đẩy phát triển khoa học công nghệ, đổi mới sáng tạo và chuyển đổi số của thành phố.
+              </p>
+              <p>
+                Đồng thời, các chính sách về y tế, giáo dục, an sinh xã hội cũng được xác định nhằm triển khai đúng đối tượng, đúng thời hạn để người dân trực tiếp thụ hưởng.
+              </p>
+              <p>
+                Mỗi cơ quan, đơn vị và địa phương phải xác định vấn đề cấp thiết, nhóm đối tượng chịu tác động, cách thức thực hiện và thời hạn hoàn thành. Khi sử dụng một cơ chế mới, phải trả lời được điểm nghẽn nào đã được tháo gỡ và người dân, doanh nghiệp được hưởng lợi gì.
+              </p>
+            </div>
+          </div>
+        </div>
+
+<!-- VỊ TRÍ ẢNH: DÀN 2 HÌNH -->
+        <div class="editorial-grid-2 fade-up-element">
+          <div class="grid-img-card">
+            <div class="img-box">
+              <img 
+                src="/Dự án Nạo vét, xây dựng hạ tầng, cải tạo môi trường Bờ Bắc Kênh Đôi, phường Chánh Hưng.jpg" 
+                alt="Dự án Nạo vét, xây dựng hạ tầng, cải tạo môi trường Bờ Bắc Kênh Đôi, phường Chánh Hưng"
+                referrerpolicy="no-referrer"
+                loading="lazy"
+              />
+            </div>
+            <div class="grid-img-caption">
+              Dự án Nạo vét, xây dựng hạ tầng, cải tạo môi trường Bờ Bắc Kênh Đôi, phường Chánh Hưng
+            </div>
+          </div>
+
+          <div class="grid-img-card">
+            <div class="img-box">
+              <img 
+                src="/Toàn cảnh nút giao thông An Phú. Ảnh HOÀNG HÙNG.jpg" 
+                alt="Toàn cảnh nút giao thông An Phú. Ảnh HOÀNG HÙNG"
+                referrerpolicy="no-referrer"
+                loading="lazy"
+              />
+            </div>
+            <div class="grid-img-caption">
+              Toàn cảnh nút giao thông An Phú. Ảnh HOÀNG HÙNG
+            </div>
+          </div>
+        </div>
+
+
+        <!-- DẤU NGHỈ SAU PHẦN TRẢ LỜI 2 -->
+        <div class="editorial-divider-break fade-up-element" aria-hidden="true"></div>
+
+        <!-- KHỐI TRÍCH DẪN NỔI BẬT 1 -->
+        <section class="quote-section-editorial fade-up-element" aria-label="Trích dẫn tiêu biểu của đồng chí Nguyễn Mạnh Cường">
+          <div class="quote-inner-container">
+            <span class="decorative-drop-quote" aria-hidden="true">“</span>
+            <blockquote class="featured-quote-text">
+              Luật Phát triển đô thị đang trao cho TPHCM cơ hội bứt phá mạnh mẽ. Vì vậy thành phố khẩn trương triển khai thi hành luật, đưa luật vào cuộc sống để kịp thời giải quyết những vấn đề cấp thiết của thực tiễn, tạo bệ phóng cho thành phố phát triển nhanh và bền vững.
+            </blockquote>
+            <div class="quote-author-signoff">
+              Đồng chí NGUYỄN MẠNH CƯỜNG
+            </div>
+          </div>
+        </section>
+
+        <!-- CÂU HỎI 3 & CÂU TRẢ LỜI 3 -->
+        <div class="qa-block fade-up-element">
+          <div class="question-box">
+            <div class="question-speaker-badge">
+              <span class="question-icon">?</span>
+              
+            </div>
+            <p class="question-text">
+              Đồng chí vừa nói mỗi nhiệm vụ phải có người chịu trách nhiệm và sản phẩm đầu ra. Khi thực hiện phân cấp, giao thêm nhiệm vụ, quyền hạn, thành phố sẽ gắn trách nhiệm của người đứng đầu với kết quả công việc như thế nào?
+            </p>
+          </div>
+
+          <div class="answer-box">
+            
+            <div class="answer-prose">
+              <p>
+                Khi thực hiện phân cấp, giao nhiệm vụ, quyền hạn, thành phố xác định phải gắn với mục tiêu, thời hạn và yêu cầu về kết quả. Người đứng đầu phải xác định rõ đơn vị mình được giao những nhiệm vụ gì, phải hoàn thành sản phẩm nào và chịu trách nhiệm về tiến độ, chất lượng, hiệu quả thực hiện trong phạm vi được giao. Việc đánh giá phải dựa trên kết quả thực tế.
+              </p>
+              <p>
+                Nhiệm vụ được giao phải được lượng hóa phù hợp với chức trách, vị trí công tác để có thể theo dõi tiến độ, đánh giá chất lượng và xác định trách nhiệm. Kết quả thực hiện được phản ánh trong đánh giá KPI.
+              </p>
+              <p>
+                Đối với những nhiệm vụ liên quan nhiều cơ quan, đơn vị, cơ quan chủ trì phải chủ động đề xuất phương án phân công thực hiện và làm rõ phần việc của từng bên. Không thể lấy việc chờ ý kiến phối hợp làm lý do kéo dài công việc. Khi đã được giao nhiệm vụ và có đủ điều kiện thực hiện, người đứng đầu phải chịu trách nhiệm về kết quả thuộc phạm vi mình phụ trách.
+              </p>
+              <p>
+                Thành phố sẽ tăng cường theo dõi tiến độ, số hóa việc thực hiện nhiệm vụ và kịp thời cảnh báo những công việc có nguy cơ quá hạn. Kết quả thực hiện là căn cứ để đánh giá mức độ hoàn thành nhiệm vụ và trách nhiệm của người đứng đầu.
+              </p>
+              <p>
+                Để Luật Phát triển đô thị sớm đi vào cuộc sống, yêu cầu đặt ra cho đội ngũ cán bộ, công chức là phải tập trung nỗ lực, nâng cao trách nhiệm, phát huy cao nhất vai trò chủ thể, lấy kết quả phục vụ người dân, doanh nghiệp làm trung tâm, kết nối sự đồng hành của người dân, doanh nghiệp trong quá trình tổ chức thực hiện nhiệm vụ.
+              </p>
+              <p>
+                Điều này đòi hỏi mỗi cán bộ, công chức phải chủ động tìm tòi, đổi mới tư duy, có quyết tâm đột phá, sáng tạo trong tổ chức thực hiện, dám chịu trách nhiệm với việc mình làm, lĩnh vực mình phụ trách để mỗi nghị quyết, quyết định đạt kết quả tốt nhất trong thực tế.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DẤU NGHỈ SAU PHẦN TRẢ LỜI 3 -->
+        <div class="editorial-divider-break fade-up-element" aria-hidden="true"></div>
+
+      </section>
+
+      <!-- VỊ TRÍ ẢNH: DÀN 1 HÌNH LỚN -->
+      <figure class="editorial-figure-single fade-up-element">
+        <div class="figure-single-img-wrapper">
+          <img 
+            src="/Không gian đô thị TPHCM phát triển dọc sông Sài Gòn. Ảnh HOÀNG HÙNG.png" 
+            alt="Không gian đô thị TPHCM phát triển dọc sông Sài Gòn. Ảnh HOÀNG HÙNG"
+            referrerpolicy="no-referrer"
+            loading="lazy"
+          />
+        </div>
+        <figcaption class="editorial-caption-shared" style="padding-top: 0.85rem; margin-top: 0.75rem;">
+          <span class="caption-bullet"></span>
+          <span>Không gian đô thị TPHCM phát triển dọc sông Sài Gòn. Ảnh HOÀNG HÙNG</span>
+        </figcaption>
+      </figure>
+
+      <!-- ======================================================================
+           PHÂN ĐOẠN 2: TITLE 2 - ĐÚNG PHÁP LUẬT, TẠO CHUYỂN BIẾN
+           ====================================================================== -->
+      <section class="editorial-section">
+        
+        <div class="section-title-wrap fade-up-element">
+          <h2 class="editorial-section-title">Đúng pháp luật, tạo chuyển biến</h2>
+        </div>
+
+        <!-- CÂU HỎI 4 & CÂU TRẢ LỜI 4 -->
+        <div class="qa-block fade-up-element">
+          <div class="question-box">
+            <div class="question-speaker-badge">
+              <span class="question-icon">?</span>
+              
+            </div>
+            <p class="question-text">
+              Thưa đồng chí, Luật Phát triển đô thị được triển khai với tinh thần khẩn trương nhưng cũng yêu cầu chặt chẽ, đúng quy định pháp luật. Quan điểm của TPHCM như thế nào?
+            </p>
+          </div>
+
+          <div class="answer-box">
+            
+            <div class="answer-prose">
+              <p>
+                Trong quá trình thực hiện, nếu có phát sinh khó khăn, vướng mắc, thành phố sẽ phân định rõ nguyên nhân khách quan với những trường hợp chậm trễ do chủ quan, né tránh hoặc việc tổ chức thực hiện chưa đáp ứng yêu cầu. Trường hợp quy định chưa rõ hoặc phát sinh vấn đề mới, cơ quan chuyên môn phải chủ động tham mưu phương án xử lý, báo cáo cấp có thẩm quyền xem xét, quyết định.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DẤU NGHỈ SAU PHẦN TRẢ LỜI 4 -->
+        <div class="editorial-divider-break fade-up-element" aria-hidden="true"></div>
+
+        
+
+        <!-- CÂU HỎI 5 & CÂU TRẢ LỜI 5 -->
+        <div class="qa-block fade-up-element">
+          <div class="question-box">
+            <div class="question-speaker-badge">
+              <span class="question-icon">?</span>
+              
+            </div>
+            <p class="question-text">
+              Từ yêu cầu mỗi nhiệm vụ phải có sản phẩm cụ thể, theo đồng chí, sau 3-6 tháng, những kết quả nào sẽ là căn cứ để thành phố đánh giá bước đầu việc triển khai Luật Phát triển đô thị?
+            </p>
+          </div>
+
+          <div class="answer-box">
+            
+            <div class="answer-prose">
+              <p>
+                Trong 3-6 tháng đầu, thành phố chưa đặt mục tiêu đánh giá toàn bộ tác động của luật. Trước hết, phải kiểm chứng các cơ chế mới có thực sự vận hành tốt hay không: quy định đã được cụ thể hóa đầy đủ chưa, đầu mối thực hiện đã rõ chưa, thủ tục đã được công khai, số hóa chưa, hồ sơ có được giải quyết đúng hạn không, những vướng mắc liên ngành có được xử lý kịp thời không.
+              </p>
+              <p>
+                Với quy hoạch, đất đai và hạ tầng, thành phố sẽ nhìn vào những công việc trước đây còn ách tắc nay đã chuyển động: tiến độ bồi thường, hỗ trợ, tái định cư được rút ngắn, mặt bằng được bàn giao, hồ sơ dự án được giải quyết nhanh hơn, các cơ chế mới bắt đầu được triển khai trên thực tế.
+              </p>
+              <p>
+                Với chính sách dân sinh, kết quả phải được thể hiện bằng việc người dân thực sự được thụ hưởng chính sách như thế nào, như số người bệnh thận mạn giai đoạn cuối được hỗ trợ, số người hiến máu tình nguyện được hỗ trợ bảo hiểm y tế và khả năng tăng cường nhân lực y tế về cơ sở.
+              </p>
+              <p>
+                Một nhóm kết quả khác là chất lượng phục vụ. Người dân và doanh nghiệp phải thấy thủ tục được rút ngắn, thời gian và chi phí thực hiện giảm, phản ánh được tiếp nhận và xử lý kịp thời, thông tin được công khai, minh bạch.
+              </p>
+              <p>
+                Thành phố sẽ không lấy số lượng văn bản làm thước đo chủ yếu mà quan trọng là xem xét cơ chế mới có vận hành nhịp nhàng, đồng bộ hay không, công việc ách tắc trước đây có chuyển động hay không và người dân, doanh nghiệp có nhận thấy sự thay đổi hay không. Từ kết quả thực tế, những vướng mắc hoặc tác động ngoài dự kiến phải được kịp thời báo cáo, điều chỉnh theo thẩm quyền.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DẤU NGHỈ SAU PHẦN TRẢ LỜI 5 -->
+        <div class="editorial-divider-break fade-up-element" aria-hidden="true"></div>
+
+      </section>
+
+      <!-- VỊ TRÍ ẢNH: DÀN 3 HÌNH -->
+        <div class="editorial-grid-3 fade-up-element">
+          <div class="grid-img-card grid-img-card-3">
+            <div class="img-box">
+              <img 
+                src="/Tuyến đường sắt số 1 (Bến Thành - Suối Tiên) có nhiều đoạn đi ngầm HOÀNG HÙNG.jpg" 
+                alt="Tuyến đường sắt số 1 (Bến Thành - Suối Tiên). Ảnh: HOÀNG HÙNG"
+                referrerpolicy="no-referrer"
+                loading="lazy"
+              />
+            </div>
+            <div class="grid-img-caption">
+              Tuyến đường sắt số 1 (Bến Thành - Suối Tiên). Ảnh: HOÀNG HÙNG
+            </div>
+          </div>
+
+          <div class="grid-img-card grid-img-card-3">
+            <div class="img-box">
+              <img 
+                src="/1000008928-9278-9014.jpg.jpg" 
+                alt="Bác sĩ Bệnh viện Nhân dân Gia Định thăm khám cho người dân phường Phú Mỹ"
+                referrerpolicy="no-referrer"
+                loading="lazy"
+              />
+            </div>
+            <div class="grid-img-caption">
+              Bác sĩ Bệnh viện Nhân dân Gia Định thăm khám cho người dân phường Phú Mỹ
+
+            </div>
+          </div>
+
+          <div class="grid-img-card grid-img-card-3">
+            <div class="img-box">
+              <img 
+                src="/img-1695-2471-3328.jpg.jpg"
+                alt="Cán bộ công chức phường 9, quận Tân Bình hướng dẫn người dân thực hiện nộp hồ sơ tại Ki-ốt Dịch vụ công đặt tại UBND phường"
+                referrerpolicy="no-referrer"
+                loading="lazy"
+              />
+            </div>
+            <div class="grid-img-caption">
+              Cán bộ công chức phường 9, quận Tân Bình hướng dẫn người dân thực hiện nộp hồ sơ tại Ki-ốt Dịch vụ công đặt tại UBND phường
+            </div>
+          </div>
+
+          
+        </div>
+
+      <!-- ======================================================================
+           INFOGRAPHIC TIMELINE: DẤU MỐC XÂY DỰNG VÀ THI HÀNH LUẬT PHÁT TRIỂN ĐÔ THỊ
+           ====================================================================== -->
+      <section class="infographic-timeline-section fade-up-element" aria-label="Infographic Dấu mốc xây dựng và thi hành Luật Phát triển đô thị">
+        <div class="timeline-header-group">
+          
+          <h2 class="timeline-title">Dấu mốc xây dựng và thi hành <br> Luật Phát triển đô thị</h2>
+        </div>
+
+        <div class="timeline-track-vertical">
+          
+          <div class="timeline-item-node">
+            <div class="timeline-node-dot"></div>
+            <div class="timeline-card-content">
+              <span class="timeline-date-badge">16-4-2026</span>
+              <p class="timeline-text-body">
+                UBND TPHCM ban hành kế hoạch xây dựng dự án Luật Đô thị đặc biệt.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item-node">
+            <div class="timeline-node-dot"></div>
+            <div class="timeline-card-content">
+              <span class="timeline-date-badge">8-7-2026</span>
+              <p class="timeline-text-body">
+                Dự án Luật Đô thị đặc biệt được Chính phủ thống nhất đổi tên thành Luật Phát triển đô thị.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item-node">
+            <div class="timeline-node-dot"></div>
+            <div class="timeline-card-content">
+              <span class="timeline-date-badge">7-8-2026</span>
+              <p class="timeline-text-body">
+                Tại kỳ họp không thường lệ thứ nhất, Quốc hội khóa XVI nghe Tờ trình và Báo cáo thẩm tra dự án Luật Phát triển đô thị.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item-node">
+            <div class="timeline-node-dot"></div>
+            <div class="timeline-card-content">
+              <span class="timeline-date-badge">24-8-2026</span>
+              <p class="timeline-text-body">
+                Quốc hội khóa XVI biểu quyết thông qua Luật Phát triển đô thị số 18/2026/QH16, với 465/474 đại biểu tham gia biểu quyết tán thành.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item-node">
+            <div class="timeline-node-dot"></div>
+            <div class="timeline-card-content">
+              <span class="timeline-date-badge">24-8-2026</span>
+              <p class="timeline-text-body">
+                Thành ủy TPHCM ban hành Chỉ thị 22-CT/TU về lãnh đạo, chỉ đạo tổ chức triển khai thi hành Luật.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item-node">
+            <div class="timeline-node-dot"></div>
+            <div class="timeline-card-content">
+              <span class="timeline-date-badge">26-8-2026</span>
+              <p class="timeline-text-body">
+                Thành ủy TPHCM tổ chức Hội nghị quán triệt, triển khai thi hành Luật Phát triển đô thị.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item-node">
+            <div class="timeline-node-dot"></div>
+            <div class="timeline-card-content">
+              <span class="timeline-date-badge">27-8-2026</span>
+              <p class="timeline-text-body">
+                Kỳ họp thứ 4 HĐND TPHCM thông qua nghị quyết quy định xây dựng, ban hành văn bản quy phạm pháp luật để tổ chức thi hành Luật Phát triển đô thị trên địa bàn TPHCM.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item-node">
+            <div class="timeline-node-dot"></div>
+            <div class="timeline-card-content">
+              <span class="timeline-date-badge">17-9-2026</span>
+              <p class="timeline-text-body">
+                Thủ tướng ban hành Quyết định 1796/QĐ-TTg về ban hành kế hoạch triển khai thi hành Luật Phát triển đô thị.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item-node">
+            <div class="timeline-node-dot"></div>
+            <div class="timeline-card-content">
+              <span class="timeline-date-badge">22-9-2026</span>
+              <p class="timeline-text-body">
+                Kỳ họp thứ 5 HĐND TPHCM thông qua 24 nghị quyết triển khai, cụ thể hóa Luật Phát triển đô thị thuộc các nhóm chính sách: nông nghiệp - môi trường; khoa học - công nghệ; quy hoạch - kiến trúc; xây dựng; y tế; giáo dục; ngân sách.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item-node highlight-node">
+            <div class="timeline-node-dot"></div>
+            <div class="timeline-card-content">
+              <span class="timeline-date-badge">1-10-2026</span>
+              <p class="timeline-text-body" style="font-weight: 700; color: var(--color-accent-red);">
+                Luật Phát triển đô thị có hiệu lực.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Banner tổng kết infographic -->
+        <div class="timeline-summary-banner">
+          <p>
+            Luật Phát triển đô thị bao gồm 5 chương, 66 điều, bao quát trên các lĩnh vực với 7 nhóm chính sách đặc thù, vượt trội thúc đẩy phát triển đô thị đặc biệt. TPHCM vừa là địa phương chủ động đề xuất xây dựng luật, vừa là đối tượng được áp dụng trực tiếp các cơ chế, chính sách dành cho đô thị đặc biệt.
+          </p>
+        </div>
+      </section>
+
+      
+
+    </article>
+  </main>
+
+  <!-- ==========================================================================
+       NÚT QUAY LẠI ĐẦU TRANG (BACK TO TOP)
+       ========================================================================== -->
+  <button id="back-to-top-btn" title="Lên đầu trang" aria-label="Cuộn lên đầu trang">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ==========================================================================
+       LIGHTBOX POPUP TOÀN MÀN HÌNH (FULLSCREEN IMAGE LIGHTBOX)
+       ========================================================================== -->
+  <div id="image-lightbox-modal" class="lightbox-modal" aria-hidden="true" role="dialog" aria-label="Xem ảnh phóng to toàn màn hình">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    
+    <div class="lightbox-container">
+      <button type="button" class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Đóng (ESC)" title="Đóng trình xem ảnh (ESC)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="lightbox-content">
+        <div class="lightbox-img-wrapper">
+          <img id="lightbox-img" src="" alt="" />
+        </div>
+        <div class="lightbox-footer">
+          <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VỊ TRÍ ẢNH: DÀN 1 HÌNH LỚN -->
+      <figure class="editorial-figure-single fade-up-element">
+        <div class="figure-single-img-wrapper">
+          <img 
+            src="/Khu vực Bến Bạch Đằng, TPHCM (ẢNH HOÀNG HÙNG).jpg" 
+            alt="Khu vực Bến Bạch Đằng, TPHCM (ẢNH HOÀNG HÙNG)"
+            referrerpolicy="no-referrer"
+            loading="lazy"
+          />
+        </div>
+        <figcaption class="editorial-caption-shared" style="padding-top: 0.85rem; margin-top: 0.75rem;">
+          <span class="caption-bullet"></span>
+          <span>Khu vực Bến Bạch Đằng, TPHCM. Ảnh: HOÀNG HÙNG</span>
+        </figcaption>
+      </figure>
+
+  <!-- ==========================================================================
+       JAVASCRIPT TƯƠNG TÁC (VANILLA JS THUẦN TÚY, SIÊU MƯỢT)
+       ========================================================================== -->
+  <script>
+    (function() {
+      'use strict';
+
+      const progressBar = document.getElementById('progress-bar');
+      const backToTopBtn = document.getElementById('back-to-top-btn');
+      const heroParallax = document.getElementById('hero-parallax');
+
+      function updateScrollMetrics() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        
+        // 1. Cập nhật thanh tiến trình đọc
+        if (docHeight > 0) {
+          const progressPercent = (scrollTop / docHeight) * 100;
+          progressBar.style.width = Math.min(100, Math.max(0, progressPercent)) + '%';
+        }
+
+        // 2. Parallax scrolling mượt mà trên hình title
+        if (heroParallax && scrollTop < window.innerHeight * 1.5) {
+          heroParallax.style.transform = `translate3d(0, ${scrollTop * 0.35}px, 0)`;
+        }
+
+        // 3. Hiện/ẩn nút Back to top
+        if (scrollTop > 450) {
+          backToTopBtn.classList.add('visible');
+        } else {
+          backToTopBtn.classList.remove('visible');
+        }
+
+        // 4. Parallax cuộn nhẹ tạo độ sâu cho các khối hình ảnh (.editorial-grid-2, .editorial-grid-3, .editorial-figure-single)
+        updateImageParallax();
+      }
+
+      // Parallax nhẹ cho hình ảnh trong các khung lưới
+      const parallaxImageContainers = document.querySelectorAll('.editorial-grid-2, .editorial-grid-3, .editorial-figure-single');
+
+      function updateImageParallax() {
+        const windowHeight = window.innerHeight;
+        const viewportCenter = windowHeight / 2;
+
+        parallaxImageContainers.forEach(container => {
+          const rect = container.getBoundingClientRect();
+          if (rect.bottom > -80 && rect.top < windowHeight + 80) {
+            const elementCenter = rect.top + rect.height / 2;
+            const distanceFromCenter = elementCenter - viewportCenter;
+            const offset = (distanceFromCenter * -0.065).toFixed(1);
+
+            const images = container.querySelectorAll('.img-box img, .figure-single-img-wrapper img');
+            images.forEach(img => {
+              img.style.setProperty('--parallax-y', `${offset}px`);
+            });
+          }
+        });
+      }
+
+      let isTicking = false;
+      window.addEventListener('scroll', function() {
+        if (!isTicking) {
+          window.requestAnimationFrame(function() {
+            updateScrollMetrics();
+            isTicking = false;
+          });
+          isTicking = true;
+        }
+      }, { passive: true });
+
+      backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+
+      // 4. Scroll-Triggered Animation (IntersectionObserver)
+      const animatedElements = document.querySelectorAll('.fade-up-element');
+      
+      if ('IntersectionObserver' in window) {
+        const elementObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          root: null,
+          rootMargin: '0px 0px -50px 0px',
+          threshold: 0.06
+        });
+
+        animatedElements.forEach(el => elementObserver.observe(el));
+      } else {
+        animatedElements.forEach(el => el.classList.add('in-view'));
+      }
+
+      // 5. Khởi tạo và điều khiển Carousel thư viện ảnh trượt ngang
+      const carouselTrack = document.getElementById('carousel-track');
+      const prevBtn = document.getElementById('carousel-prev-btn');
+      const nextBtn = document.getElementById('carousel-next-btn');
+      const currentIndexEl = document.getElementById('carousel-current-index');
+      const totalCountEl = document.getElementById('carousel-total-count');
+      const dotsContainer = document.getElementById('carousel-dots');
+
+      if (carouselTrack && prevBtn && nextBtn) {
+        const slides = carouselTrack.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+        if (totalCountEl) totalCountEl.textContent = totalSlides;
+
+        // Tạo các nút dots tương ứng
+        if (dotsContainer) {
+          dotsContainer.innerHTML = '';
+          slides.forEach((_, idx) => {
+            const dot = document.createElement('button');
+            dot.className = 'carousel-dot' + (idx === 0 ? ' active' : '');
+            dot.setAttribute('aria-label', `Xem ảnh tư liệu ${idx + 1}`);
+            dot.addEventListener('click', () => {
+              const slideWidth = slides[0].getBoundingClientRect().width + 20;
+              carouselTrack.scrollTo({
+                left: idx * slideWidth,
+                behavior: 'smooth'
+              });
+            });
+            dotsContainer.appendChild(dot);
+          });
+        }
+
+        // Cập nhật số thứ tự slide và dot active khi người dùng cuộn/vuốt
+        let scrollTimeout;
+        carouselTrack.addEventListener('scroll', () => {
+          clearTimeout(scrollTimeout);
+          scrollTimeout = setTimeout(() => {
+            const slideWidth = slides[0].getBoundingClientRect().width + 20;
+            const activeIndex = Math.round(carouselTrack.scrollLeft / slideWidth);
+            const clampedIndex = Math.min(Math.max(0, activeIndex), totalSlides - 1);
+            
+            if (currentIndexEl) currentIndexEl.textContent = clampedIndex + 1;
+            
+            const dots = dotsContainer ? dotsContainer.querySelectorAll('.carousel-dot') : [];
+            dots.forEach((dot, idx) => {
+              dot.classList.toggle('active', idx === clampedIndex);
+            });
+          }, 60);
+        }, { passive: true });
+
+        // Nút Prev
+        prevBtn.addEventListener('click', () => {
+          const slideWidth = slides[0].getBoundingClientRect().width + 20;
+          carouselTrack.scrollBy({
+            left: -slideWidth,
+            behavior: 'smooth'
+          });
+        });
+
+        // Nút Next
+        nextBtn.addEventListener('click', () => {
+          const slideWidth = slides[0].getBoundingClientRect().width + 20;
+          carouselTrack.scrollBy({
+            left: slideWidth,
+            behavior: 'smooth'
+          });
+        });
+
+        // Hỗ trợ phím mũi tên bàn phím khi focus vào carousel
+        carouselTrack.setAttribute('tabindex', '0');
+        carouselTrack.addEventListener('keydown', (e) => {
+          const slideWidth = slides[0].getBoundingClientRect().width + 20;
+          if (e.key === 'ArrowLeft') {
+            carouselTrack.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+          } else if (e.key === 'ArrowRight') {
+            carouselTrack.scrollBy({ left: slideWidth, behavior: 'smooth' });
+          }
+        });
+      }
+
+      // 6. TRÌNH XEM ẢNH POPUP TOÀN MÀN HÌNH (FULLSCREEN IMAGE LIGHTBOX)
+      const lightboxModal = document.getElementById('image-lightbox-modal');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxCaption = document.getElementById('lightbox-caption');
+      const lightboxCloseBtn = document.getElementById('lightbox-close-btn');
+      const lightboxBackdrop = document.getElementById('lightbox-backdrop');
+
+      function initImageLightbox() {
+        const imageElements = document.querySelectorAll(
+          '.hero-cover img, .dossier-avatar-inner img, .editorial-grid-2 img, .editorial-grid-3 img, .editorial-figure-single img, .carousel-slide-media img'
+        );
+
+        imageElements.forEach((img) => {
+          img.addEventListener('click', (e) => {
+            e.stopPropagation();
+
+            let caption = img.alt || '';
+            const parentCard = img.closest('.grid-img-card, .grid-img-card-3, .editorial-figure-single, .carousel-slide');
+            if (parentCard) {
+              const capEl = parentCard.querySelector('.grid-img-caption, .editorial-caption-shared, .carousel-slide-caption');
+              if (capEl) {
+                caption = capEl.textContent.trim();
+              }
+            }
+
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt || '';
+            if (lightboxCaption) lightboxCaption.textContent = caption;
+
+            lightboxModal.classList.add('active');
+            lightboxModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+          });
+        });
+      }
+
+      function closeLightbox() {
+        lightboxModal.classList.remove('active');
+        lightboxModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      if (lightboxModal) {
+        initImageLightbox();
+
+        if (lightboxCloseBtn) lightboxCloseBtn.addEventListener('click', closeLightbox);
+        if (lightboxBackdrop) lightboxBackdrop.addEventListener('click', closeLightbox);
+
+        window.addEventListener('keydown', (e) => {
+          if (!lightboxModal.classList.contains('active')) return;
+          if (e.key === 'Escape') {
+            closeLightbox();
+          }
+        });
+      }
+
+      updateScrollMetrics();
+    })();
+  </script>
+</body>
+</html>

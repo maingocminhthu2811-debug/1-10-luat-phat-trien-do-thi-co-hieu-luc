@@ -1,0 +1,6 @@
+{
+  "name": "Mega Story: Đưa Luật Phát triển đô thị vào cuộc sống",
+  "description": "Trang báo Longform/Mega Story phỏng vấn Phó Chủ tịch UBND TPHCM Nguyễn Mạnh Cường về việc triển khai Luật Phát triển đô thị.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
