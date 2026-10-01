@@ -96,7 +96,7 @@
       align-items: center;
       justify-content: center;
       overflow: hidden;
-      background-color: #0B192C; /* Xanh đậm chính khách, trong trẻo */
+      background-color: #132B4A; /* Xanh tươi sáng hơn, trong trẻo */
       text-align: center;
     }
 
@@ -115,20 +115,20 @@
       height: 100%;
       object-fit: cover;
       object-position: center 35%;
-      filter: brightness(0.96) contrast(1.05); /* Tăng độ trong hiển thị hình ảnh sắc nét */
+      filter: brightness(1.03) contrast(1.06); /* Tăng độ tươi sáng và độ trong hiển thị hình ảnh sắc nét */
     }
 
-    /* Lớp màng mờ gradient: Phía trên trong suốt hoàn toàn, phía dưới xanh đậm dần */
+    /* Lớp màng mờ gradient: Xanh sáng trong trẻo, khoáng đạt */
     .hero-scrim {
       position: absolute;
       inset: 0;
       z-index: 2;
       background: linear-gradient(
         180deg, 
-        rgba(11, 25, 44, 0.02) 0%, 
-        rgba(11, 25, 44, 0.12) 30%, 
-        rgba(11, 25, 44, 0.58) 72%, 
-        rgba(11, 25, 44, 0.92) 100%
+        rgba(15, 30, 55, 0.0) 0%, 
+        rgba(15, 35, 65, 0.08) 30%, 
+        rgba(15, 42, 85, 0.38) 70%, 
+        rgba(11, 30, 60, 0.72) 100%
       );
     }
 
